@@ -1,0 +1,67 @@
+dataset: "OxfordPets"
+data_path: "./data/OxfordPets"
+num_class: 37
+model: clip
+backbone: "ViT-B/16"
+resolution: 224
+
+seed: 0
+gpuid: 0
+num_workers: 4
+
+epochs: 10
+warmup: 1
+batch_size: 64
+lr: 0.03
+weight_decay: 5e-4
+momentum: 0.9
+lnl_methods: "CE"
+
+vpt_deep: True
+vpt_len: 20
+
+N_CTX: 16
+CLASS_TOKEN_POSITION: "end"
+
+noise_mode: 'sym'
+noise_ratio: 0.0
+
+class_names: [
+  'Abyssinian',
+  'Bengal',
+  'Birman',
+  'Bombay',
+  'British_Shorthair',
+  'Egyptian_Mau',
+  'Maine_Coon',
+  'Persian',
+  'Ragdoll',
+  'Russian_Blue',
+  'Siamese',
+  'Sphynx',
+  'american_bulldog',
+  'american_pit_bull_terrier',
+  'basset_hound',
+  'beagle',
+  'boxer',
+  'chihuahua',
+  'english_cocker_spaniel',
+  'english_setter',
+  'german_shorthaired',
+  'great_pyrenees',
+  'havanese',
+  'japanese_chin',
+  'keeshond',
+  'leonberger',
+  'miniature_pinscher',
+  'newfoundland',
+  'pomeranian',
+  'pug',
+  'saint_bernard',
+  'samoyed',
+  'scottish_terrier',
+  'shiba_inu',
+  'staffordshire_bull_terrier',
+  'wheaten_terrier',
+  'yorkshire_terrier',
+]
